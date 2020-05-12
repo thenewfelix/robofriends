@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+input {
+  margin: 0;
+  width: 70%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+.close:hover {
+  background-color: #5262c0;
+  color: white;
+}
+.header {
+  background-color: #7604a3;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #e2e2e2;
+  color: rgb(77, 4, 70);
+  float: left;
+  text-align: center;
+  font-size: 16px;
+}
+.addBtn:hover {
+  background-color: rgb(85, 139, 255);
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  cursor:pointer;
+  position: relative;
+  padding: 10px 8px 10px 40px;
+  background: #aaf;
+  font-size: 18px;
+  transition: 0.2s;
+}
+/*Could remove this if i want, dont know why i added it in the first place*/
+ul li:hover {
+  background: #ccc;
+}
+ul li.checked {
+  background: #aaf;
+  color: #fff;
+  text-decoration: line-through;
+}

@@ -1,0 +1,798 @@
+<html lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><style type="text/css">.dismissButton{background-color:#fff;border:1px solid #dadce0;color:#1a73e8;border-radius:4px;font-family:Roboto,sans-serif;font-size:14px;height:36px;cursor:pointer;padding:0 24px}.dismissButton:hover{background-color:rgba(66,133,244,0.04);border:1px solid #d2e3fc}.dismissButton:focus{background-color:rgba(66,133,244,0.12);border:1px solid #d2e3fc;outline:0}.dismissButton:hover:focus{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd}.dismissButton:active{background-color:rgba(66,133,244,0.16);border:1px solid #d2e2fd;box-shadow:0 1px 2px 0 rgba(60,64,67,0.3),0 1px 3px 1px rgba(60,64,67,0.15)}.dismissButton:disabled{background-color:#fff;border:1px solid #f1f3f4;color:#3c4043}
+</style><style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
+</style><style type="text/css">.gm-control-active>img{box-sizing:content-box;display:none;left:50%;pointer-events:none;position:absolute;top:50%;transform:translate(-50%,-50%)}.gm-control-active>img:nth-child(1){display:block}.gm-control-active:hover>img:nth-child(1),.gm-control-active:active>img:nth-child(1){display:none}.gm-control-active:hover>img:nth-child(2),.gm-control-active:active>img:nth-child(3){display:block}
+</style><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans"><style type="text/css">.gm-ui-hover-effect{opacity:.6}.gm-ui-hover-effect:hover{opacity:1}
+</style><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}
+</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Cizarua - Responsive One Page Portfolio Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+    
+        <!-- Le styles -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/owl.carousel.css" rel="stylesheet">
+        <link href="css/magnific-popup.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&amp;subset=cyrillic,hebrew,latin-ext" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&amp;subset=cyrillic,latin-ext" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i,500,500i,600,600i,700,700i&amp;subset=cyrillic,latin-ext,vietnamese" rel="stylesheet"> 
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic,600italic,600&amp;subset=latin,greek-ext,cyrillic-ext,greek,vietnamese,cyrillic" rel="stylesheet" type="text/css">
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="images/favicon.png"><!--favicon image-->
+    <script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/35/7/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/35/7/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/35/7/map.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/35/7/marker.js"></script><style type="text/css">.gm-style {
+        font: 400 11px Roboto, Arial, sans-serif;
+        text-decoration: none;
+      }
+      .gm-style img { max-width: none; }</style><script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/35/7/onion.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/35/7/stats.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.google.com/maps-api-v3/api/js/35/7/controls.js"></script></head>
+
+	<body>
+    	<!-- Preloader -->
+        <div id="preloader" style="display: none;">
+            <div id="status" style="display: none;"><img src="images/black-logo.png" alt="loading content.."></div>
+        </div>
+		
+		<!--HOME START-->
+		<div id="home" class="clearfix"><div id="big-video-wrap"><div id="big-video-vid" class="video-js vjs-default-skin vjs-controls-disabled vjs-has-started vjs-user-inactive vjs-playing" style="width: 1436.67px; height: 808.125px; display: block; top: 0px; left: -349.333px;"><video id="big-video-vid_html5_api" class="vjs-tech" preload="auto" data-setup="{}" webkit-playsinline="" style="position: absolute; width: 1436.67px; height: 808.125px;" autoplay="" src="nsa.mp4"></video><div></div><div class="vjs-poster" tabindex="-1" style="display: none;"></div><div class="vjs-text-track-display"></div><div class="vjs-loading-spinner" style="display: none;"></div><div class="vjs-big-play-button" role="button" aria-live="polite" tabindex="0" aria-label="play video"><span aria-hidden="true"></span></div><div class="vjs-control-bar"><div class="vjs-play-control vjs-control  vjs-playing" role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Pause</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:02</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time </span>0:11</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time </span>-0:09</div></div><div class="vjs-progress-control vjs-control"><div role="slider" aria-valuenow="17.51" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="0:02"><div class="vjs-load-progress" style="width: 100%;"><span class="vjs-control-text">Loaded: 0%</span></div><div class="vjs-play-progress" style="width: 17.51%;"><span class="vjs-control-text">Progress: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" aria-live="off" style="left: 17.51%;"><span class="vjs-control-text">0:02</span></div></div></div><div class="vjs-fullscreen-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div role="slider" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="0%"><div class="vjs-volume-level" style="width: 0%;"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle" style="left: 0%;"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control vjs-vol-0" role="button" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Subtitles Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span></div><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div><div class="vjs-captions-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Captions Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span></div><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Chapters Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span></div><div class="vjs-menu"><ul class="vjs-menu-content"></ul><li class="vjs-menu-title">Chapters</li></div></div></div></div></div>
+			<!--HEADER START-->
+			<nav class="header home-section clearfix ">
+            		<div class="top-logo hidden-sm hidden-xs clearfix">
+                    	<a href="index.html"> <img alt="logo" src="images/top-logo.png"> </a>
+                    </div>
+					<div id="undefined-sticky-wrapper" class="sticky-wrapper" style="height: 80px;"><div class="for-sticky" style="">
+						<div class="container nav-box">
+							<div class="logo">
+								<a href="index.html">
+									<img class="logo1" alt="logo" src="images/logo.png">
+								</a>
+							</div>
+							<div class="menu-box hidden-xs hidden-sm">
+								<ul class="navigation">
+									<li class="current"><a href="#home">Home</a></li>
+                                    <li class=""><a href="#works">Works</a></li>
+									<li class=""><a href="#about">About</a></li>
+									<li class=""><a href="#services">Services</a></li>
+									<li class=""><a href="#contact">Contact</a></li>
+									<li><a class="external" href="blog.html">Blog</a></li>
+								</ul>
+							</div><!--/.menu-box-->
+							<div class="box-mobile hidden-lg hidden-md">
+								<div class="menu-btn" data-toggle="collapse" data-target=".nav-collapse">
+									<span class="fa fa-bars"></span>
+								</div>
+								<ul class="nav-collapse mobile-menu hidden-lg hidden-md"><li class="current"><a href="#home">Home</a></li><li><a href="#works">Works</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li><li><a class="external" href="blog.html">Blog</a></li></ul>
+							</div><!--/.box-mobile-->	
+						</div><!--/.container-->
+					</div></div><!--/.for-sticky-->
+			</nav><!--/.header-->
+			<!--HEADER END-->
+		
+		
+			<!--SLIDER HOME START-->
+			<div class="slider-box clearfix">
+				<div class="slider home-slider clearfix owl-carousel owl-theme" data-auto-play="8000" style="opacity: 1; display: block;">
+				
+					
+					<div class="owl-wrapper-outer autoHeight" style="height: 722.156px;"><div class="owl-wrapper" style="width: 4428px; left: 0px; display: block; transition: all 0ms ease 0s; transform: translate3d(0px, 0px, 0px); transform-origin: 369px center 0px; perspective-origin: 369px center;"><div class="owl-item" style="width: 738px;"><div class="slide img-bg clearfix" data-background="images/slider/1.jpg">
+						<div class="slider-mask"></div>
+							<div class="row">
+								<div class="col-md-10 col-md-offset-1">
+									<div class="caption-box clearfix">
+										<h3>The laundromat is for sale and decides </h3>
+                                        <div class="slider-border"></div>
+										<p>Five sisters in 19th century England must cope with the pressures to marry while protecting themselves from a growing population of zombies. 
+										Shaggy and the gang team up with the superstars of WWE in this hi-octane, all-new original movie! When Scooby and Mystery Inc. </p>
+										<a href="#about" class="spc-btn slide-btn">More info</a>
+										<div class="spacing20 clearboth"></div>
+									</div><!--/.caption-box-->
+								</div><!--/.col-md-8-->
+							</div><!--/.row-->
+					</div></div><div class="owl-item" style="width: 738px;"><div class="slide img-bg clearfix" data-background="images/slider/2.jpg">
+						<div class="slider-mask"></div>
+							<div class="row">
+								<div class="col-md-10 col-md-offset-1">
+									<div class="caption-box clearfix">
+										<h3>In the highstakes world of political power</h3>
+                                        <div class="slider-border"></div>
+										<p>Five sisters in 19th century England must cope with the pressures to marry while protecting themselves from a growing population of zombies. 
+										Shaggy and the gang team up with the superstars of WWE in this hi-octane, all-new original movie! When Scooby and Mystery Inc. </p>
+										<a href="#about" class="spc-btn slide-btn">More info</a>
+										<div class="spacing20 clearboth"></div>
+									</div><!--/.caption-box-->
+								</div><!--/.col-md-8-->
+							</div><!--/.row-->
+					</div></div><div class="owl-item" style="width: 738px;"><div class="slide img-bg clearfix" data-background="images/slider/3.jpg">
+						<div class="slider-mask"></div>
+							<div class="row">
+								<div class="col-md-10 col-md-offset-1">
+									<div class="caption-box clearfix">
+										<h3>he is a descendant of the secret Assassins </h3>
+                                        <div class="slider-border"></div>
+										<p>Five sisters in 19th century England must cope with the pressures to marry while protecting themselves from a growing population of zombies. 
+										Shaggy and the gang team up with the superstars of WWE in this hi-octane, all-new original movie! When Scooby and Mystery Inc. </p>
+										<a href="#about" class="spc-btn slide-btn">More info</a>
+										<div class="spacing20 clearboth"></div>
+									</div><!--/.caption-box-->
+								</div><!--/.col-md-8-->
+							</div><!--/.row-->
+					</div></div></div></div><!--/.slider1-->
+                    
+                    <!--/.slider2-->
+                    
+                    <!--/.slider3-->
+					
+					
+					
+					
+				<div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div><div class="owl-buttons"><div class="owl-prev"><span class="slide-nav inleft"><i class="fa fa-angle-left"></i></span></div><div class="owl-next"><span class="slide-nav inright"><i class="fa fa-angle-right"></i></span></div></div></div></div><!--/.slider-->
+			</div><!--/.slider-box-->
+			<!--SLIDER HOME END-->
+		</div><!--/home end-->
+		<!--HOME END-->
+		
+        <!--WORKS START-->
+        <div id="works" class="content clearfix">
+        	<div class="container">
+            	<p class="opener-text">Portfolio / Project</p>
+            	<h2 class="content-title">Chapter #1: Works</h2>
+                <p class="content-subtitle">Works mean activity involving mental or physical effort done in order to achieve a purpose or result.</p>
+                <div class="content-border"></div>
+                <div class="spacing30 clearboth"></div>
+                <ul class="port-filter">
+                	<li><a class="active" href="#" data-filter="*">All</a></li>
+                    <li><a href="#" data-filter=".design">Web Design</a></li>
+                    <li><a href="#" data-filter=".development">Web Development</a></li>
+                    <li><a href="#" data-filter=".photography">Photography</a></li>
+                </ul>
+                <div class="spacing40"></div>
+                
+                <div class="row">
+                	<div class="portfolio-body clearfix" style="position: relative; height: 3934.08px;">
+                    
+                		<div class="col-md-4 col-sm-6 port-item design photography" style="position: absolute; left: 0px; top: 0px;">
+                        	<a class="port-ajax" href="#" data-link="work1.html">
+                            	<div class="port-hov">
+                                	<i class="fa fa-chain"></i>	
+                                </div><!--/.port-hov-->
+                            	<img src="images/work/1.jpg" alt="team">
+                            </a><!--/.port-ajax-->
+                            <div class="port-content">
+                                <i class="fa fa-hourglass-end"></i>
+                                <h3>The Savior</h3>
+                                <p class="port-cat">Web Design</p>
+                            </div><!--/.port-content-->
+                            <div class="spacing30"></div>
+                        </div><!--/.col-md-4-->
+                        
+                        <div class="col-md-4 col-sm-6 port-item development photography" style="position: absolute; left: 0px; top: 647px;">
+                        	<a class="port-ajax" href="#" data-link="work2.html">
+                            	<div class="port-hov">
+                                	<i class="fa fa-chain"></i>	
+                                </div><!--/.port-hov-->
+                            	<img src="images/work/2.jpg" alt="team">
+                            </a><!--/.port-ajax-->
+                            <div class="port-content">
+                                <i class="fa fa-tty"></i>
+                                <h3>Dog Years</h3>
+                                <p class="port-cat">Photography</p>
+                            </div><!--/.port-content-->
+                            <div class="spacing30"></div>
+                        </div><!--/.col-md-4-->
+                        
+                        <div class="col-md-4 col-sm-6 port-item design development" style="position: absolute; left: 0px; top: 1001px;">
+                        	<a class="port-ajax" href="#" data-link="work3.html">
+                            	<div class="port-hov">
+                                	<i class="fa fa-chain"></i>	
+                                </div><!--/.port-hov-->
+                            	<img src="images/work/3.jpg" alt="team">
+                            </a><!--/.port-ajax-->
+                            <div class="port-content">
+                                <i class="fa fa-shower"></i>
+                                <h3>Yellow Marine</h3>
+                                <p class="port-cat">Web Development</p>
+                            </div><!--/.port-content-->
+                            <div class="spacing30"></div>
+                        </div><!--/.col-md-4-->
+                        
+                        <div class="col-md-4 col-sm-6 port-item  photography" style="position: absolute; left: 0px; top: 1331px;">
+                        	<a class="port-ajax" href="#" data-link="work4.html">
+                            	<div class="port-hov">
+                                	<i class="fa fa-chain"></i>	
+                                </div><!--/.port-hov-->
+                            	<img src="images/work/4.jpg" alt="team">
+                            </a><!--/.port-ajax-->
+                            <div class="port-content">
+                                <i class="fa fa-tty"></i>
+                                <h3>Fast Car</h3>
+                                <p class="port-cat">Photography</p>
+                            </div><!--/.port-content-->
+                            <div class="spacing30"></div>
+                        </div><!--/.col-md-4-->
+                        
+                        
+                        <div class="col-md-4 col-sm-6 port-item design" style="position: absolute; left: 0px; top: 1978px;">
+                        	<a class="port-ajax" href="#" data-link="work5.html">
+                            	<div class="port-hov">
+                                	<i class="fa fa-chain"></i>	
+                                </div><!--/.port-hov-->
+                            	<img src="images/work/5.jpg" alt="team">
+                            </a><!--/.port-ajax-->
+                            <div class="port-content">
+                                <i class="fa fa-hourglass-end"></i>
+                                <h3>Great World</h3>
+                                <p class="port-cat">Web Design</p>
+                            </div><!--/.port-content-->
+                            <div class="spacing30"></div>
+                        </div><!--/.col-md-4-->
+                        
+                        <div class="col-md-4 col-sm-6 port-item development" style="position: absolute; left: 0px; top: 2332px;">
+                        	<a class="port-ajax" href="#" data-link="work3.html">
+                            	<div class="port-hov">
+                                	<i class="fa fa-chain"></i>	
+                                </div><!--/.port-hov-->
+                            	<img src="images/work/6.jpg" alt="team">
+                            </a><!--/.port-ajax-->
+                            <div class="port-content">
+                                <i class="fa fa-shower"></i>
+                                <h3>Everglow</h3>
+                                <p class="port-cat">Web Development</p>
+                            </div><!--/.port-content-->
+                            <div class="spacing30"></div>
+                        </div><!--/.col-md-4-->
+                        
+                        <div class="col-md-4 col-sm-6 port-item design photography" style="position: absolute; left: 0px; top: 2632px;">
+                        	<a class="port-ajax" href="#" data-link="work4.html">
+                            	<div class="port-hov">
+                                	<i class="fa fa-chain"></i>	
+                                </div><!--/.port-hov-->
+                            	<img src="images/work/7.jpg" alt="team">
+                            </a><!--/.port-ajax-->
+                            <div class="port-content">
+                                <i class="fa fa-hourglass-end"></i>
+                                <h3>Ultra Edition</h3>
+                                <p class="port-cat">Web Design</p>
+                            </div><!--/.port-content-->
+                            <div class="spacing30"></div>
+                        </div><!--/.col-md-4-->
+                        
+                        <div class="col-md-4 col-sm-6 port-item development photography" style="position: absolute; left: 0px; top: 3279px;">
+                        	<a class="port-ajax" href="#" data-link="work5.html">
+                            	<div class="port-hov">
+                                	<i class="fa fa-chain"></i>	
+                                </div><!--/.port-hov-->
+                            	<img src="images/work/8.jpg" alt="team">
+                            </a><!--/.port-ajax-->
+                            <div class="port-content">
+                                <i class="fa fa-tty"></i>
+                                <h3>My Tounge</h3>
+                                <p class="port-cat">Photography</p>
+                            </div><!--/.port-content-->
+                            <div class="spacing30"></div>
+                        </div><!--/.col-md-4-->
+                        
+                        <div class="col-md-4 col-sm-6 port-item design development" style="position: absolute; left: 0px; top: 3634px;">
+                        	<a class="port-ajax" href="#" data-link="work1.html">
+                            	<div class="port-hov">
+                                	<i class="fa fa-chain"></i>	
+                                </div><!--/.port-hov-->
+                            	<img src="images/work/9.jpg" alt="team">
+                            </a><!--/.port-ajax-->
+                            <div class="port-content">
+                                <i class="fa fa-shower"></i>
+                                <h3>The Decode</h3>
+                                <p class="port-cat">Web Development</p>
+                            </div><!--/.port-content-->
+                            <div class="spacing30"></div>
+                        </div><!--/.col-md-4-->
+                        
+                        
+                	</div><!--/.portfolio-body-->
+                </div><!--/.row-->
+                
+            </div><!--/.container-->
+            
+            <div id="worksajax" class="worksajax clearfix"></div><!--portfolio detail here-->
+        </div><!--about-->
+        <!--WORKS END-->
+                  
+		<!--BIG BACKGROUND START-->
+		<div id="testimonial" class="bg bg1 clearfix">
+			<div class="bg-mask"></div>
+			<div class="para-img"></div>
+            
+            <div class="big-ticker">
+            
+                <!--/.big-text-->
+                
+                
+                <!--/.big-text-->
+                
+                <!--/.big-text-->
+                
+            <div class="container big-text" style="">
+                    <h3 class="bg-title">Yati Pesek</h3>
+                    
+                    <div class="clearfix clearboth"></div>
+                    <div class="slider-border"></div>
+                    <i class="bg-icon fa fa-heartbeat"></i>
+                    <p class="bg-text">Jack is lured into a dangerous adventure after meeting a new friend Garret and Alison try to silence a reporter who has been disturbing 
+                    the Hawthornes and Brady makes a strange breakthrough in the case. Jason returns to Rosewood to warn Ali not to trust Mary.</p>
+                    <p class="bg-sub">Dangdut Manager</p>
+                </div><div class="container big-text" style="display: none;">
+                    <h3 class="bg-title">Susi Susanti</h3>
+                    
+                    <div class="clearfix clearboth"></div>
+                    <div class="slider-border"></div>
+                    <i class="bg-icon fa fa-heartbeat"></i>
+                    <p class="bg-text">Jack is lured into a dangerous adventure after meeting a new friend Garret and Alison try to silence a reporter who has been disturbing 
+                    the Hawthornes and Brady makes a strange breakthrough in the case. Jason returns to Rosewood to warn Ali not to trust Mary.</p>
+                    <p class="bg-sub">Ex Athlete</p>
+                </div><div class="container big-text" style="display: none;">
+                    <h3 class="bg-title">Marisa Hakue</h3>
+                    
+                    <div class="clearfix clearboth"></div>
+                    <div class="slider-border"></div>
+                    <i class="bg-icon fa fa-heartbeat"></i>
+                    <p class="bg-text">Jack is lured into a dangerous adventure after meeting a new friend Garret and Alison try to silence a reporter who has been disturbing 
+                    the Hawthornes and Brady makes a strange breakthrough in the case. Jason returns to Rosewood to warn Ali not to trust Mary.</p>
+                    <p class="bg-sub">Make up Artist</p>
+                </div></div><!--/.big-ticker-->
+            
+		</div><!--/.bg-->
+		<!--BIG BACKGROUND END-->
+        		
+        <!--ABOUT START-->
+        <div id="about" class="content clearfix">
+        	<div class="container">
+            	<p class="opener-text">History / journey</p>
+            	<h2 class="content-title">Chapter #2: About</h2>
+                <p class="content-subtitle">Philosophy is the study of general and fundamental problems concerning matters such as existence, knowledge, values, reason.</p>
+                <div class="content-border"></div>
+                <div class="spacing30 clearboth"></div>
+                <div class="row">
+                    <div class="col-md-8">
+                    	<div class="slider post-slider clearfix owl-carousel owl-theme" data-auto-play="8000" style="opacity: 1; display: block;">
+                        
+                            <div class="owl-wrapper-outer autoHeight" style="height: 462.578px;"><div class="owl-wrapper" style="width: 4248px; left: 0px; display: block; transition: all 0ms ease 0s; transform: translate3d(0px, 0px, 0px); transform-origin: 354px center 0px; perspective-origin: 354px center;"><div class="owl-item" style="width: 708px;"><div class="slide">
+                                <img alt="about" src="images/about/1.jpg">
+                                <div class="spacing30 clearboth"></div>
+                            </div></div><div class="owl-item" style="width: 708px;"><div class="slide">
+                                <img alt="about" src="images/about/2.jpg">
+                                <div class="spacing30 clearboth"></div>
+                            </div></div><div class="owl-item" style="width: 708px;"><div class="slide">
+                                <img alt="about" src="images/about/3.jpg">
+                                <div class="spacing30 clearboth"></div>
+                            </div></div></div></div>
+                            
+                            
+                            
+                            
+                            
+                       </div><!--/.post-slider-->
+                    </div>
+                    <div class="col-md-4">
+                    	<div class="box-relative clearfix">
+                        	<i class="content-icon fa fa-heartbeat"></i>
+                            
+                            <p class="sub-title">The philosophy</p>
+                            <h3 class="big-title">United we stand,<br> divided we fall. </h3>
+                            <p class="sub-text">As tensions with Philip increase, Elizabeth spends time with her old friend Porchey. Churchill’s portrait is painted for his 80th birthday.</p>
+                            
+                            <p>Margaret and Peter are reunited, but another obstacle stands in their way. Elizabeth is torn between her duty as Queen and her love for her sister.</p>
+                            
+                            <a class="go-btn" href="#contact">Get quote</a>
+                            <div class="spacing30 clearboth"></div>
+                        </div><!--/.box-relative-->
+                    </div><!--/col-md-4-->
+                </div><!--/.row-->
+            </div><!--/.container-->
+            <div id="team" class="container">
+            	<div class="row">
+                	<div class="col-md-4">
+                    	<div class="team-relative">
+                    		<img alt="team" src="images/team/big1.jpg">
+                            <div class="team-absolute">
+                            
+                            	<p class="team-post">Web Developer</p>
+                                <h3 class="team-name">Susi Similikiti</h3>
+                                
+                                <div class="slider-border"></div>
+                                
+                                <ul class="team-social">
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                </ul>
+                                
+                            </div><!--/.team-absolute-->
+                        </div><!--/.team-relative-->
+                        <div class="spacing30 clearboth"></div>
+                    </div><!--/.col-md-4-->
+                    
+                    <div class="col-md-4 team-box">
+                    	<div class="spacing30 clearboth"></div>
+                    	<div class="opener-text">Value / hardworker</div>
+                    	<h3 class="content-title">The Greatest team of all time</h3>
+                        <div class="content-border"></div>
+                        <i class="small-icon fa fa-cubes"></i>
+                        <div class="spacing30 clearboth"></div>
+                        <p class="content-subtitle">the master assassin who faked his death in hopes of putting that part.</p>
+                        <div class="spacing30 clearboth"></div>
+                    </div><!--/.col-md-4-->
+                    	
+                    <div class="col-md-4">
+                    	<div class="team-relative">
+                    		<img alt="team" src="images/team/big2.jpg">
+                            <div class="team-absolute">
+                            
+                            	<p class="team-post">Web Designer</p>
+                                <h3 class="team-name">Maria Marijan</h3>
+                                
+                                <div class="slider-border"></div>
+                                
+                                <ul class="team-social">
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                </ul>
+                                
+                            </div><!--/.team-absolute-->
+                        </div><!--/.team-relative-->
+                        <div class="spacing30 clearboth"></div>
+                    </div><!--/.col-md-4-->
+                    
+                </div><!--/.row-->
+            </div><!--/team-->
+        </div><!--about-->
+        <!--ABOUT END-->
+		
+        <!--BIG BACKGROUND START-->
+		<div id="clients" class="bg bg2 clearfix">
+			<div class="bg-mask"></div>
+			<div class="para-img"></div>
+			<div class="container big-text">
+				<h3 class="bg-title">Our Clients</h3>
+                <div class="slider-border"></div>
+                
+				<div class="row client-list">
+					
+					<div class="col-md-3">
+						<img alt="client" src="images/client/1.png">
+						<div class="spacing40 clearboth"></div>
+					</div><!--/.col-md-3-->
+					
+					<div class="col-md-3">
+						<img alt="client" src="images/client/2.png">
+						<div class="spacing40 clearboth"></div>
+					</div><!--/.col-md-3-->
+					
+					<div class="col-md-3">
+						<img alt="client" src="images/client/3.png">
+						<div class="spacing40 clearboth"></div>
+					</div><!--/.col-md-3-->
+					
+					<div class="col-md-3">
+						<img alt="client" src="images/client/4.png">
+						<div class="spacing40 clearboth"></div>
+					</div><!--/.col-md-3-->
+					
+				</div><!--/.client-list-->
+			</div><!--/.big-text-->
+		</div><!--/.bg-->
+		<!--BIG BACKGROUND END-->
+        
+        <!--SERVICES START-->
+        <div id="services" class="content clearfix">
+        	<div class="container">
+            	<p class="opener-text">Talent / ability</p>
+            	<h2 class="content-title">Chapter #3: Services</h2>
+                <p class="content-subtitle">Talent is natural aptitude or skill. A natural ability to be good at something, especially without being taught.</p>
+                <div class="content-border"></div>
+                <div class="spacing30 clearboth"></div>
+                
+                <div class="slider post-slider clearfix owl-carousel owl-theme" data-auto-play="8000" style="opacity: 1; display: block;">
+                        
+                <div class="owl-wrapper-outer autoHeight" style="height: 286.641px;"><div class="owl-wrapper" style="width: 2832px; left: 0px; display: block; transition: all 0ms ease 0s; transform: translate3d(-708px, 0px, 0px); transform-origin: 1062px center 0px; perspective-origin: 1062px center;"><div class="owl-item" style="width: 708px;"><div class="slide">
+                    <img alt="about" src="images/services/1.jpg">
+                    <div class="spacing30 clearboth"></div>
+                </div></div><div class="owl-item" style="width: 708px;"><div class="slide">
+                    <img alt="about" src="images/services/2.jpg">
+                    <div class="spacing30 clearboth"></div>
+                </div></div></div></div>
+                
+                 
+                          
+                </div><!--/.post-slider-->
+                       
+                <div class="spacing30 clearboth"></div>
+                <div class="spacing30 clearboth"></div>  
+                     
+                <div class="row">
+                	<div class="col-md-4">
+                    	<div class="box-relative clearfix">
+                        	<i class="content-icon fa fa-balance-scale"></i>
+                            
+                            <p class="sub-title">UIX Styling</p>
+                            <h3 class="big-title">Web Design </h3>
+                            <p class="sub-text">The true story of Desmond Doss, the conscientious objector who, at the Battle of Okinawa.</p>
+                            
+                            <p>We see Doss’s trials and tribulations after enlisting in the US Army and trying to become a medic.Finally, we see the hell on Earth that was Hacksaw Ridge.</p>
+                            
+                            <a class="go-btn" href="#contact">Contact us</a>
+                            <div class="spacing30 clearboth"></div>
+                        </div><!--/.box-relative-->
+                    </div><!--/col-md-4-->
+                    
+                    <div class="col-md-4">
+                    	<div class="box-relative clearfix">
+                        	<i class="content-icon fa fa-bathtub"></i>
+                            
+                            <p class="sub-title">SEO Analysis</p>
+                            <h3 class="big-title">Web Development</h3>
+                           	<p class="sub-text">The true story of Desmond Doss, the conscientious objector who, at the Battle of Okinawa.</p>
+                            
+                            <p>We see Doss’s trials and tribulations after enlisting in the US Army and trying to become a medic.Finally, we see the hell on Earth that was Hacksaw Ridge.</p>
+                            
+                            <a class="go-btn" href="#contact">Contact us</a>
+                            <div class="spacing30 clearboth"></div>
+                        </div><!--/.box-relative-->
+                    </div><!--/col-md-4-->
+                    
+                    <div class="col-md-4">
+                    	<div class="box-relative clearfix">
+                        	<i class="content-icon fa fa-bug"></i>
+                            
+                            <p class="sub-title">reflect the value </p>
+                            <h3 class="big-title">Brand Identity</h3>
+                            <p class="sub-text">The true story of Desmond Doss, the conscientious objector who, at the Battle of Okinawa.</p>
+                            
+                            <p>We see Doss’s trials and tribulations after enlisting in the US Army and trying to become a medic.Finally, we see the hell on Earth that was Hacksaw Ridge.</p>
+                            
+                            <a class="go-btn" href="#contact">Contact us</a>
+                            <div class="spacing30 clearboth"></div>
+                        </div><!--/.box-relative-->
+                    </div><!--/col-md-4-->
+                    
+                </div><!--/.row-->
+            </div><!--/team-->
+        </div><!--services-->
+        <!--SERVICES END-->
+        
+        <!--BIG BACKGROUND START-->
+		<div id="pricing-table" class="bg bg3 clearfix">
+			<div class="bg-mask"></div>
+			<div class="para-img"></div>
+			<div class="container big-text">
+				<h3 class="bg-title">The Price</h3>
+                <div class="slider-border"></div>
+                
+				<div class="row pricing-list">
+					
+                    
+                     <div class="col-md-4">
+                    	<div class="pricing-table">
+                        	<h3>Football Package</h3>
+                            <p class="price">$20/month</p>
+                            <div class="slider-border"></div>
+                            <i class="price-icon fa fa-futbol-o"></i>
+                            <p>Continues to offer</p>
+                            <p>Deal in his past </p>
+                            <p>Kept secret for decades</p>
+                            <div class="spacing20"></div>
+                            <a href="#" class="pricing-btn slide-btn">Order Now!</a>
+                        </div><!--/.pricing-table-->
+                    </div><!--/col-md-4-->
+                    
+                    <div class="col-md-4">
+                    	<div class="pricing-table">
+                        	<h3>Toggle Package</h3> 
+                            <p class="price">$30/month</p>
+                            <div class="slider-border"></div>
+                            <i class="price-icon fa fa-toggle-off"></i>
+                            <p>Continues to offer</p>
+                            <p>Deal in his past </p>
+                            <p>Kept secret for decades</p>
+                            <div class="spacing20"></div>
+                            <a href="#" class="pricing-btn slide-btn">Order Now!</a>
+                        </div><!--/.pricing-table-->
+                    </div><!--/col-md-4-->
+                    
+                    <div class="col-md-4">
+                    	<div class="pricing-table">
+                        	<h3>Phone Package</h3>
+                            <p class="price">$40/month</p>
+                            <div class="slider-border"></div>
+                            <i class="price-icon fa fa-tty"></i>
+                            <p>Continues to offer</p>
+                            <p>Deal in his past </p>
+                            <p>Kept secret for decades</p>
+                            <div class="spacing20"></div>
+                            <a href="#" class="pricing-btn slide-btn">Order Now!</a>
+                        </div><!--/.pricing-table-->
+                    </div><!--/col-md-4-->
+                    
+					
+					
+				</div><!--/.client-list-->
+			</div><!--/.big-text-->
+		</div><!--/.bg-->
+		<!--BIG BACKGROUND END-->
+       
+       
+        <!--CONTACT START-->
+		<div id="contact" class="content clearfix">
+			<div class="container">
+            
+				<p class="opener-text">Communication / relationship </p>
+            	<h2 class="content-title">Chapter #4: Contact</h2>
+                <p class="content-subtitle">Communication is the imparting or exchanging of information or news. Means of connection between people or places, in particular.</p>
+                <div class="content-border"></div>
+                <div class="spacing30 clearboth"></div>
+                
+                <div id="map_canvas" class="map_canvas" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"><div tabindex="0" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;"><div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;"><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -86, -65);"><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div><div style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px;"><div style="width: 256px; height: 256px;"></div></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"><div style="width: 32px; height: 37px; overflow: hidden; position: absolute; left: -16px; top: -37px; z-index: 0;"><img alt="" src="images/office-building.png" draggable="false" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 37px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: -1;"><div style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -86, -65);"><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -512px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: -256px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 0px;"></div><div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 512px; top: 256px;"></div></div></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 0;"><div style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -86, -65);"><div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.google.com/maps/vt?pb=!1m5!1m4!1i15!2i26180!3i17017!4i256!2m3!1e0!2sm!3i450157346!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1301875&amp;key=AIzaSyAA0P2PJhCNpI3fQGaaUMMP6yMY3JLe5aU&amp;token=25297" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.google.com/maps/vt?pb=!1m5!1m4!1i15!2i26179!3i17017!4i256!2m3!1e0!2sm!3i450157382!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1301875&amp;key=AIzaSyAA0P2PJhCNpI3fQGaaUMMP6yMY3JLe5aU&amp;token=65144" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.google.com/maps/vt?pb=!1m5!1m4!1i15!2i26181!3i17016!4i256!2m3!1e0!2sm!3i450157382!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1301875&amp;key=AIzaSyAA0P2PJhCNpI3fQGaaUMMP6yMY3JLe5aU&amp;token=98123" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.google.com/maps/vt?pb=!1m5!1m4!1i15!2i26181!3i17017!4i256!2m3!1e0!2sm!3i450157370!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1301875&amp;key=AIzaSyAA0P2PJhCNpI3fQGaaUMMP6yMY3JLe5aU&amp;token=33995" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.google.com/maps/vt?pb=!1m5!1m4!1i15!2i26181!3i17018!4i256!2m3!1e0!2sm!3i450157370!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1301875&amp;key=AIzaSyAA0P2PJhCNpI3fQGaaUMMP6yMY3JLe5aU&amp;token=46053" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.google.com/maps/vt?pb=!1m5!1m4!1i15!2i26180!3i17016!4i256!2m3!1e0!2sm!3i450157382!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1301875&amp;key=AIzaSyAA0P2PJhCNpI3fQGaaUMMP6yMY3JLe5aU&amp;token=123915" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.google.com/maps/vt?pb=!1m5!1m4!1i15!2i26179!3i17016!4i256!2m3!1e0!2sm!3i450157382!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1301875&amp;key=AIzaSyAA0P2PJhCNpI3fQGaaUMMP6yMY3JLe5aU&amp;token=53086" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.google.com/maps/vt?pb=!1m5!1m4!1i15!2i26180!3i17018!4i256!2m3!1e0!2sm!3i450157334!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1301875&amp;key=AIzaSyAA0P2PJhCNpI3fQGaaUMMP6yMY3JLe5aU&amp;token=92240" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.google.com/maps/vt?pb=!1m5!1m4!1i15!2i26179!3i17018!4i256!2m3!1e0!2sm!3i450157334!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1301875&amp;key=AIzaSyAA0P2PJhCNpI3fQGaaUMMP6yMY3JLe5aU&amp;token=21411" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.google.com/maps/vt?pb=!1m5!1m4!1i15!2i26182!3i17016!4i256!2m3!1e0!2sm!3i450157382!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1301875&amp;key=AIzaSyAA0P2PJhCNpI3fQGaaUMMP6yMY3JLe5aU&amp;token=72331" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.google.com/maps/vt?pb=!1m5!1m4!1i15!2i26182!3i17017!4i256!2m3!1e0!2sm!3i450157370!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1301875&amp;key=AIzaSyAA0P2PJhCNpI3fQGaaUMMP6yMY3JLe5aU&amp;token=8203" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.google.com/maps/vt?pb=!1m5!1m4!1i15!2i26178!3i17018!4i256!2m3!1e0!2sm!3i450157310!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1301875&amp;key=AIzaSyAA0P2PJhCNpI3fQGaaUMMP6yMY3JLe5aU&amp;token=25902" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -512px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.google.com/maps/vt?pb=!1m5!1m4!1i15!2i26178!3i17016!4i256!2m3!1e0!2sm!3i450157382!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1301875&amp;key=AIzaSyAA0P2PJhCNpI3fQGaaUMMP6yMY3JLe5aU&amp;token=78878" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.google.com/maps/vt?pb=!1m5!1m4!1i15!2i26182!3i17018!4i256!2m3!1e0!2sm!3i450157370!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1301875&amp;key=AIzaSyAA0P2PJhCNpI3fQGaaUMMP6yMY3JLe5aU&amp;token=20261" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div><div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;"><img draggable="false" alt="" role="presentation" src="https://maps.google.com/maps/vt?pb=!1m5!1m4!1i15!2i26178!3i17017!4i256!2m3!1e0!2sm!3i450157382!2m3!1e2!6m1!3e5!3m14!2sen-US!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcC5zOi02MHxwLmw6LTYw!4e0!23i1301875&amp;key=AIzaSyAA0P2PJhCNpI3fQGaaUMMP6yMY3JLe5aU&amp;token=90936" style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div></div></div><div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;"><p class="gm-style-pbt"></p></div><div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;"><div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);"><div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div><div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"><div title="" style="width: 32px; height: 37px; overflow: hidden; position: absolute; opacity: 0; cursor: pointer; touch-action: none; left: -16px; top: -37px; z-index: 0;"><img alt="" src="images/office-building.png" draggable="false" style="position: absolute; left: 0px; top: 0px; user-select: none; width: 32px; height: 37px; border: 0px; padding: 0px; margin: 0px; max-width: none;"></div></div><div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div></div></div></div><iframe aria-hidden="true" frameborder="0" style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;" src="about:blank"></iframe><div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" rel="noopener" href="https://maps.google.com/maps?ll=-6.9401,107.62575&amp;z=15&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3" title="Open this area in Google Maps (opens a new window)" style="position: static; overflow: visible; float: none; display: inline;"><div style="width: 66px; height: 26px; cursor: pointer;"><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google_white5.png" draggable="false" style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div></a></div><div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 300px; height: 180px; position: absolute; left: 204px; top: 110px;"><div style="padding: 0px 0px 10px; font-size: 16px;">Map Data</div><div style="font-size: 13px;">Map data ©2019 Google</div><button draggable="false" title="Close" aria-label="Close" type="button" class="gm-ui-hover-effect" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: absolute; cursor: pointer; user-select: none; top: 0px; right: 0px; width: 37px; height: 37px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="pointer-events: none; display: block; width: 13px; height: 13px; margin: 12px;"></button></div><div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 166px; bottom: 0px; width: 121px;"><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a style="text-decoration: none; cursor: pointer; display: none;">Map Data</a><span>Map data ©2019 Google</span></div></div></div><div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;"><div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2019 Google</div></div><div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 95px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a href="https://www.google.com/intl/en-US_US/help/terms_maps.html" target="_blank" rel="noopener" style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Terms of Use</a></div></div><button draggable="false" title="Toggle fullscreen view" aria-label="Toggle fullscreen view" type="button" class="gm-control-active gm-fullscreen-control" style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%20018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"></button><div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"><div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;"><div style="width: 1px;"></div><div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div></div><div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;"><a target="_blank" rel="noopener" title="Report errors in the road map or imagery to Google" href="https://www.google.com/maps/@-6.9401,107.62575,15z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report a map error</a></div></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false" controlwidth="40" controlheight="81" style="margin: 10px; user-select: none; position: absolute; bottom: 95px; right: 40px;"><div class="gmnoprint" controlwidth="40" controlheight="81" style="position: absolute; left: 0px; top: 0px;"><div draggable="false" style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255); width: 40px; height: 81px;"><button draggable="false" title="Zoom in" aria-label="Zoom in" type="button" class="gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23333%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpolygon%20fill%3D%22%23111%22%20points%3D%2218%2C7%2011%2C7%2011%2C0%207%2C0%207%2C7%200%2C7%200%2C11%207%2C11%207%2C18%2011%2C18%2011%2C11%2018%2C11%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"></button><div style="position: relative; overflow: hidden; width: 30px; height: 1px; margin: 0px 5px; background-color: rgb(230, 230, 230); top: 0px;"></div><button draggable="false" title="Zoom out" aria-label="Zoom out" type="button" class="gm-control-active" style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; overflow: hidden; width: 40px; height: 40px; top: 0px; left: 0px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C7h18v4H0V7z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"></button></div></div><div class="gmnoprint" controlwidth="40" controlheight="40" style="display: none; position: absolute;"><div style="width: 40px; height: 40px;"><button draggable="false" title="Rotate map 90 degrees" aria-label="Rotate map 90 degrees" type="button" class="gm-control-active" style="background: none rgb(255, 255, 255); display: none; border: 0px; margin: 0px 0px 32px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="height: 18px; width: 18px;"></button><button draggable="false" title="Tilt map" aria-label="Tilt map" type="button" class="gm-tilt gm-control-active" style="background: none rgb(255, 255, 255); display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="width: 18px;"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A" style="width: 18px;"></button></div></div></div></div></div><div style="background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 15px 25px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px; left: 50%; max-width: 375px; position: absolute; transform: translateX(-50%); width: calc(100% - 10px); z-index: 1;"><div><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google_gray.svg" draggable="false" style="padding: 0px; margin: 0px; border: 0px; height: 17px; vertical-align: middle; width: 52px; user-select: none;"></div><div style="line-height: 20px; margin: 15px 0px;"><span style="color: rgba(0, 0, 0, 0.87); font-size: 14px;">This page can't load Google Maps correctly.</span></div><table style="width: 100%;"><tr><td style="line-height: 16px; vertical-align: middle;"><a href="https://developers.google.com/maps/documentation/javascript/error-messages?utm_source=maps_js&amp;utm_medium=degraded&amp;utm_campaign=billing#api-key-and-billing-errors" target="_blank" rel="noopener" style="color: rgba(0, 0, 0, 0.54); font-size: 12px;">Do you own this website?</a></td><td style="text-align: right;"><button class="dismissButton">OK</button></td></tr></table></div></div>
+        
+                <!--MAP MARKER CONTENT-->
+                <div class="hidden map-content">
+                    <div class="box-map">
+                        <img src="images/maps.jpg" alt="">
+                        <h3>Our Office</h3>
+                        <p><b>Address:</b> 11231 Buah Batu Bandung</p>
+                        <p><b>Phone:</b> 987-654-321 </p>
+                        <p><b>Email:</b> company-email@email.com</p>
+                    </div>
+                </div>
+                <!--MAP MARKER CONTENT END-->
+                
+                <div class="row">
+                
+                	
+                    
+                    <div class="col-md-8">
+                    			<div id="form-wrapper">
+									 <div id="form-inner">
+										 <div id="ErrResults"><!-- retrive Error Here --></div>
+										 <div id="MainResult" style="display: none;"><!-- retrive response Here --></div>
+										 <div id="MainContent">
+											 <form id="MyContactForm" name="MyContactForm" method="post">
+												 <p class="name">
+												 <input type="text" name="name" id="name" placeholder="Your Name ...">
+												 <label for="name" id="nameLb"><span class="error" style="display: none;">*Name Field Required</span></label>
+												 </p>
+												 <p>
+												 <input type="email" name="email" id="email" placeholder="Your Email ...">
+												 <label for="email" id="emailLb">
+												 <span class="error error1" style="display: none;">*Email Field Required</span> 
+												 <span class="error error2" style="display: none;">*Email Not Valid</span>
+												 </label> 
+												 </p>
+												 <p> 
+												 <input type="text" name="phone" id="phone" placeholder="Your Telephone ...">
+												 <label for="phone" id="phoneLb"><span class="error" style="display: none;">*Telephone Field Required</span></label>
+												 </p>
+												 <p class="textarea">
+												 <textarea name="message" id="message" placeholder="Your Message ..." rows="4"></textarea>
+												 <label for="message" id="messageLb"><span class="error" style="display: none;">*Message Field Required</span></label>
+												 </p>
+												 <div class="clearfix"></div>
+												 <a href="#" class="contact-btn">Send Message</a>
+											 </form>
+										 </div><!--MainContent-->
+									 </div><!--form-inner-->
+								</div><!--form-wrapper-->
+                                <div class="spacing30 clearboth"></div>
+                    </div>
+                    
+                    <div class="col-md-4 contact-box">
+                    
+                    	<div class="box-relative clearfix">
+                            <p class="sub-title">Address</p>
+                            <div class="spacing10"></div>
+                            <p>11231 Buah Batu Bandung <br>Indonesia 40282</p>
+							<div class="spacing30"></div>
+                        </div><!--/.box-relative-->
+                        
+                        <div class="box-relative clearfix">
+                            <p class="sub-title">Phone</p>
+                            <div class="spacing10"></div>
+                            <p>987-654-321 <br>982-872-210</p>
+							<div class="spacing30"></div>
+                        </div><!--/.box-relative-->
+                        
+                        <div class="box-relative clearfix">
+                            <p class="sub-title">Email</p>
+                            <div class="spacing10"></div>
+                            <p><a href="#">company-email@email.com</a></p>
+							<div class="spacing30"></div>
+                        </div><!--/.box-relative-->
+                        
+                    </div>
+                    
+                </div><!--/.row-->
+            </div><!--/container-->
+        </div><!--/contact-->
+        <!--CONTACT END-->
+        
+
+		<footer class="footer clearfix">
+			<div class="container">
+            	<div class="row">
+                    <div class="col-md-6">
+                        <p>Made with <i class="fa fa-coffee"></i> in Bandung  ©2017 <a href="#">yoursite.com</a></p>
+                    </div><!--/.col-md-6-->
+                    
+                    <div class="col-md-6 footer-box">
+                        <ul class="footer-icon">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-xing"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        </ul><!--/.team-icon-->
+                    </div><!--/.footer-box-->
+                </div><!--/.row-->			
+			</div><!--/.container-->
+		</footer><!--/.footer--> 
+        
+                       
+		<!-- The javascript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<div class="fit-vids-style">­<style>               .fluid-width-video-wrapper {                 width: 100%;                              position: relative;                       padding: 0;                            }                                                                                   .fluid-width-video-wrapper iframe,        .fluid-width-video-wrapper object,        .fluid-width-video-wrapper embed {           position: absolute;                       top: 0;                                   left: 0;                                  width: 100%;                              height: 100%;                          }                                       </style></div><script type="text/javascript" src="js/modernizr.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyAA0P2PJhCNpI3fQGaaUMMP6yMY3JLe5aU&amp;sensor=true"></script>
+		<script type="text/javascript" src="js/jquery.ui.map.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.js"></script>
+		<script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+		<script type="text/javascript" src="js/isotope.pkgd.js"></script>
+		<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+		<script type="text/javascript" src="js/contact.js"></script>
+		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.js"></script>
+		<script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
+		<script type="text/javascript" src="js/jquery.nav.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+		<script type="text/javascript" src="js/jquery.sticky.js"></script>
+		<script type="text/javascript" src="js/ticker.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+        
+        <!--video background script start-->
+		<script type="text/javascript" src="js/video.js"></script>
+		<script type="text/javascript" src="js/bigvideo.js"></script>
+		<script>
+		//video background setting  
+		var BV = new $.BigVideo({
+			container: $('#home')
+		});
+		BV.init();
+		if (Modernizr.touch) {
+			//replace the data-background into background image
+			$(".img-bg").each(function() {
+				var imG = $(this).data('background');
+				$(this).css('background-image', "url('" + imG + "') "
+	
+				);
+			});
+		} else {
+			BV.show(
+				'nsa.mp4' , //video source directlink 
+				{ambient: true} //mute true
+			);
+		
+		}
+		</script>
+     	
+
+	
+</body></html>
